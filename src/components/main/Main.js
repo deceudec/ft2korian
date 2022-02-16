@@ -1,10 +1,9 @@
 import "./Main.css";
-import Chart from "../charts/Chart";
 import Boutonprincipal from "../boutons/boutonprincipal";
 import Boutonsecondaire from "../boutons/boutonsecondaire";
 import '../../index.css';
 
-const Main = () => {
+export default function Main () {
   return (
     <main>
       <div className="main__container">
@@ -18,6 +17,7 @@ const Main = () => {
             <div className="card_inner">
               <p className="text-primary-p">Votre score général</p>
               <img className="ehpadscore" src="../../img/ehpadscoregeneral.png"/>
+              <Route path=""
             </div>
           </div>
           <div className="card">
@@ -38,19 +38,19 @@ const Main = () => {
               <p className="text-primary-p">Votre score est basé sur 4 critères :</p>
               <div className="lignecrit">
                 <p className="">Chutes</p>
-                <img src="../../img/chutes.png"/>
+                <img src="../../img/chutes.svg"/>
               </div>
               <div className="lignecrit">
                 <p className="">Mortalité</p>
-                <img src="../../img/mortalite.png"/>
+                <img src="../../img/mortalité.svg"/>
               </div>
               <div className="lignecrit">
                 <p className="">Mesures de poids</p>
-                <img src="../../img/poids.png"/>
+                <img src="../../img/poids.svg"/>
               </div>
               <div className="lignecrit">
                 <p className="">Évaluations de la douleur</p>
-                <img src="../../img/douleur.png"/>
+                <img src="../../img/douleur.svg"/>
               </div>
             </div>
           </div>
@@ -105,4 +105,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+

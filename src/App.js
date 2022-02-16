@@ -3,6 +3,7 @@ import "./App.css";
 import Main from "./components/main/Main";
 import Navbar from "./components/navbar/Navbar";
 import Sidebar from "./components/sidebar/Sidebar";
+import { BrowserRouter, Routes, Route, Link} from 'react-router-dom';
 
 const App = () => {
   const [sidebarOpen, setsidebarOpen] = useState(false);
