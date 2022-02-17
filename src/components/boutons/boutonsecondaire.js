@@ -1,4 +1,5 @@
 import Button from '@mui/material/Button';
+import './boutonsecondaire.css';
 
 export default function Boutonsecondaire () {
     return(

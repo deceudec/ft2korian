@@ -1,12 +1,21 @@
-import React from "react";
-import "./index.css";
-import App from "./App";
-import * as ReactDOM from "react-dom";
-import { BrowserRouter } from "react-router-dom";
+import { render } from "react-dom";
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
+import Main from "./Routes/main/Main.js";
+import Dashboard from "./Routes/dashboard/dashboard";
+import App from "./App.js"
 
-ReactDOM.render(
+const rootElement = document.getElementById("root");
+render(
   <BrowserRouter>
-      <App />
-  </BrowserRouter>, 
-  document.getElementById('root'))
-
+  <App />
+    <Routes>
+    <Route path="/" exact element={<Main />} />
+    <Route path="dashboard" element={<Dashboard />}/>
+    </Routes>
+  </BrowserRouter>,
+  rootElement
+);

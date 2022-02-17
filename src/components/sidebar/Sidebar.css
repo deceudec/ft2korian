@@ -5,8 +5,10 @@
   padding: 20px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  height:100vh;
+  width:15vw;
+  position:fixed;
 }
-
 
 .sidebar__title {
   display: flex;
@@ -25,8 +27,6 @@
 .sidebar__title > div > img {
   width: 75px;
   object-fit: contain;
-  display: flex;
-  align-items: center;
 }
 
 .sidebar__title > div > h1 {
@@ -46,14 +46,6 @@
   margin-bottom: 5px;
   padding: 0 10px;
   font-weight: 700;
-}
-
-.sidebar__menu  {
-  margin-right: 100px;
-}
-
-.icon{
-  margin-right: 20px;
 }
 
 .sidebar__link {
